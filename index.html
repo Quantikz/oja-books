@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="theme-color" content="#14352b" />
+  <meta name="theme-color" content="#111111" />
   <title>Oja Books</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -16,7 +16,7 @@
       </div>
       <div class="row">
         <button class="ghost" id="undoBtn" type="button">Undo sale</button>
-        <button class="ghost" id="backupBtn" type="button">Backup</button>
+        <button class="gold" id="backupBtn" type="button">Export</button>
       </div>
     </header>
     <main id="views"></main>
@@ -30,6 +30,8 @@
   </div>
   <div id="modal" class="modal hidden"></div>
   <div id="toast" class="toast hidden"></div>
+  <div id="printRoot"></div>
+  <script src="qr.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
