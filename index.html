@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#14352b" />
+  <title>Oja Books</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow" id="shopEyebrow">Your shop</p>
+        <h1 id="shopTitle">Oja Books</h1>
+      </div>
+      <div class="row">
+        <button class="ghost" id="undoBtn" type="button">Undo sale</button>
+        <button class="ghost" id="backupBtn" type="button">Backup</button>
+      </div>
+    </header>
+    <main id="views"></main>
+    <nav class="tabbar">
+      <button data-view="home" class="active">Home</button>
+      <button data-view="sell">Sell</button>
+      <button data-view="stock">Stock</button>
+      <button data-view="books">Books</button>
+      <button data-view="settings">Setup</button>
+    </nav>
+  </div>
+  <div id="modal" class="modal hidden"></div>
+  <div id="toast" class="toast hidden"></div>
+  <script src="app.js"></script>
+</body>
+</html>
